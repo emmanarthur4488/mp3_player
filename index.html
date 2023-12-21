@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <button class="hdbtn">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </button>
+            <h3 class="p-now">Playing now</h3>
+            <button class="hdbtn">
+                <ion-icon name="list-outline"></ion-icon>
+            </button>
+        </header>
+
+        <div class="player">
+            <div class="div img-area">
+                <img src="images/music-3.jpg" alt="">
+            </div>
+
+            <div class="song-details">
+                <h1 class="name">Animation</h1>
+                <h3 class="artist">Coding</h3>
+            </div>
+
+            <div class="audio">
+                <div class="song-timer">
+                    <span class="current-time">0:00</span>
+                    <span class="max-duration">0:00</span>
+                </div>
+                <div class="progress-area">
+                    <div class="progress-bar">
+                        <audio id="main-audio" src="songs/songs/music-1.mp3"></audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btnC" id="prev">
+                    <ion-icon name="play-skip-back-sharp"></ion-icon>
+                </button>
+
+                <button class="play-pause btnC">
+                    <ion-icon name="play-sharp"></ion-icon>
+                </button>
+
+                <button class="btnC" id="next">
+                    <ion-icon name="play-skip-forward-sharp"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="jss/music-list.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
